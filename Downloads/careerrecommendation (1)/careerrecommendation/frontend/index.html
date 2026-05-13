@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>
+        Smart Career Recommendation System
+    </title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+          rel="stylesheet">
+     
+
+</head>
+
+<body>
+
+<div class="background-glow"></div>
+
+<div class="main-container">
+
+    <div class="card">
+
+        <div class="title-section">
+
+            <div class="rocket-icon">
+                🚀
+            </div>
+
+            <div>
+                <h1>
+                    Smart Career
+                    Recommendation
+                    System
+                </h1>
+
+                <p>
+                    AI-Powered Career Intelligence Platform
+                </p>
+            </div>
+
+        </div>
+
+        <div class="input-group">
+
+            <label>
+                Full Name
+            </label>
+
+            <input type="text"
+                   id="name"
+                   placeholder="Enter your name">
+
+        </div>
+
+        <div class="input-group">
+
+            <label>
+                Skills
+            </label>
+
+            <textarea
+                    id="skills"
+                     placeholder="Java, SQL, Spring Boot, HTML...">
+            </textarea>
+
+        </div>
+
+        <div class="input-group">
+
+            <label>
+                Interests
+            </label>
+
+            <textarea
+                    id="interests"
+                    placeholder="Software Development, AI, Cloud...">
+            </textarea>
+
+        </div>
+
+        <div class="upload-box">
+
+            <label>
+                📄 Upload Resume (PDF)
+            </label>
+
+            <input type="file"
+                   id="resumeFile">
+
+        </div>
+
+        <div class="button-group">
+
+            <button onclick="getRecommendation()"
+                    class="primary-btn">
+
+                ✨ Analyze Career
+
+            </button>
+
+            <button onclick="uploadResume()"
+                    class="secondary-btn">
+
+                📄 Analyze Resume
+
+            </button>
+        </div>
+
+        <div id="result"></div>
+
+        <div class="chart-container">
+            <canvas id="careerChart"></canvas>
+        </div>
+
+        <div id="history"></div>
+
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
